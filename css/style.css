@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*
+  font-family: "Montserrat Alternates", {sans-serif};
+  */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url(../img/apple.jpg);
+  background-size: cover;
+}
+
+.container-form{
+  display: flex;
+  /* border: solid thin red; */
+  max-width: 900px;
+  height: 500px;
+  border-radius: 20px;
+  margin: 10px;
+  box-shadow: 0 5px 7px black;
+  transition: all 1s ease;
+}
+
+.information{
+  width: 40%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(217, 255, 242);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+
+}
+.info-childs{
+  width: 100%;
+  padding: 0 30px;
+
+}
+.info-childs h2{
+  font-size: 2.5rem;
+}
+
+.info-childs h2 p{
+  margin: 15px 0;
+  color: black;
+}
+
+.info-childs input{
+  background-color: transparent;
+  outline: none;
+  border: solid 2px black;
+  border-radius: 20px;
+  padding: 10px 20px;
+  transition: background-color .3s ease;
+}
+
+.info-childs input:hover{
+  background-color: #9191bd;
+  color: #fff;
+  box-shadow: 0 2px 5px black;
+  cursor: pointer;
+}
+
+.form-information{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  text-align: center;
+  background-color: #f8f8f8;
+  /* border: solid thin red; */
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.form-information-childs{
+  padding: 0 30px;
+}
+
+.form-information-childs h2{
+  color: black;
+  font-size: 2rem;
+}
+
+form{
+  margin: 30px 0 0 0;
+}
+
+form div .alerta{
+  width: 290px;
+  text-align: left;
+  border-radius: 7px;
+  margin-bottom: 10px;
+  font-size: .8rem;
+}
+
+form .alerta-error{
+  display: block;
+  padding: .5rem 1rem;
+  margin-top: 10px;
+  font-weight: 500;
+  font-style: .8rem;
+}
+
+form .alerta-exito{
+  display: block;
+  padding: .5rem 1rem;
+  margin-top: 10px;
+  font-weight: 500;
+  font-style: .8rem;
+}
+
+form > .alerta-error,
+form > .alerta-exito{
+  display: none;
+}
+
+form .error{
+  outline: solid 2px #9d2222;
+}
+
+form label{
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  padding: 0 10px;
+  border: solid thin black;
+  background-color: #fff;
+  box-shadow: 0 2px 5px black;
+}
+
+form label input{
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  color: black;
+} 
+
+form input[type="submit"]{
+  border-radius: 20px;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: 0 2px 5px black;
+  border: solid thin black;
+}
+
+form input[type="submit"]:hover{
+  background-color: #9191bd;
+}
+
+.hide{
+  position: absolute;
+  transform: translateY(-300%);
+}
+
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 750px) {
+  html{
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  html{
+    font-size: 10px;
+  }
+  .container-form{
+    flex-direction: column;
+    height: auto;
+  }
+  .information{
+    width: 100%;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .form-information{
+    width: 100%;
+    padding: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0px;
+  }
+}
+
+
+/* SERVICE */
+.contenedor{
+  unicode-bidi: none; 
+}
+.card img{
+  width: 250px;
+}
